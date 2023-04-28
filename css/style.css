@@ -78,10 +78,14 @@ img {
   | header
   |============================
 */
+
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 22px;
   padding-bottom: 22px;
-  background-color: var(--black--color);
 }
 .header-logo {
   margin-right: 124px;
@@ -133,10 +137,17 @@ img {
   |============================
 */
 .hero {
-  margin: auto;
+  max-width: 1070px;
+  height: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 0;
+
   background-color: var(--black--color);
-}
-.list {
+  background-image: url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-link {
   font-weight: 600;
@@ -151,19 +162,24 @@ img {
 }
 
 .hero-subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
   text-transform: uppercase;
+  color: var(--second-text-color);
 }
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: var(--white--color);
 }
 .hero-desc {
   font-weight: 400;
@@ -256,9 +272,16 @@ img {
   |============================
 */
 .services {
+  max-width: 1600px;
   padding: 120px 0;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--black--color);
+  background-image: url(../images/bg-services.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .services-subtirle {
   margin-bottom: 20px;
@@ -314,8 +337,6 @@ img {
   font-style: normal;
   color: var(--text-color);
 }
-.benefits-list {
-}
 .benefits-caption {
   font-weight: 700;
   font-size: 42px;
@@ -333,12 +354,16 @@ img {
   text-align: center;
 }
 .benefits-subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
 }
 .benefits-title {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
@@ -350,6 +375,22 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+}
+.benefits-box {
+  display: flex;
+  gap: 130px;
+}
+.benefits-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.benefits-list .item {
+  background: #f7f7f7;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.benefits-desc {
+  width: 500px;
 }
 /**
   |============================
@@ -421,10 +462,10 @@ img {
   background-color: var(--white--color);
 }
 .social-svg {
-  color: var(--white--color);
+  fill: var(--text-color);
 }
 .social-link:hover .social-svg {
-  color: var(--active-color);
+  fill: var(--active-color);
 }
 
 /**
@@ -470,17 +511,27 @@ img {
   |============================
 */
 .page-wrapper {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
   background-color: var(--black--color);
+  background-image: url(../images/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left calc(50% + 393px + 15px);
 }
 .booking {
+  padding: 120px 0;
   flex-basis: 570px;
 }
 .contacts {
+  padding: 120px 0;
+  padding-left: 100px;
   flex-basis: 570px;
 }
 .booking-title {
@@ -516,9 +567,10 @@ img {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-.contacts-item:not(:last-child) {
+.contacts .contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .contacts-com-link {
   display: block;
   font-style: normal;
@@ -529,6 +581,8 @@ img {
   color: var(--second-text-color);
 }
 .contacts-address-link {
+  width: 100%;
+  height: 100%;
   display: block;
   font-style: normal;
   font-weight: 700;
