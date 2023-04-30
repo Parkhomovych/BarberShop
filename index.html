@@ -50,33 +50,37 @@
       </div>
     </header>
     <section class="hero">
-      <div class="box">
-        <ul class="list">
-          <li>
-            <a
-              class="hero-link link"
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Youtube
-            </a>
-          </li>
-          <li>
-            <a
-              class="hero-link link"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-        <p class="hero-subtitle">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-desc">
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
+      <div class="hero-box">
+        <div hidden class="hero-left-side">
+          <ul class="media list">
+            <li>
+              <a
+                class="hero-link link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube
+              </a>
+            </li>
+            <li>
+              <a
+                class="hero-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hero-right-side">
+          <p class="hero-subtitle">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-desc">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+        </div>
         <ul class="list">
           <li>
             <button class="hero-btn" type="button">Back</button>
@@ -123,31 +127,48 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="price">
       <div class="box">
-        <p class="services-subtirle">Spend your time with the best masters</p>
-        <h2 class="services-title">Services and prices</h2>
-        <ul class="services-list list">
-          <li class="item">
-            <ul class="services-inner-list list">
-              <li class="price-item">Men’s haircut from 300 uah.</li>
-              <li class="price-item">Beard trim from 300 uah.</li>
-              <li class="price-item">Mustache trim from 300 uah.</li>
-              <li class="price-item">Straight razor shave 300 uah.</li>
+        <p class="price-subtirle">Spend your time with the best masters</p>
+        <h2 class="price-title">Services and prices</h2>
+        <ul class="price-list list">
+          <li class="price-item item">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-decor">Men’s haircut</span> from 300 uah.
+              </li>
+              <li class="price-inner-item">
+                <span class="price-decor">Beard trim from</span> 300 uah.
+              </li>
+              <li class="price-inner-item">
+                <span class="price-decor">Mustache trim</span> from 300 uah.
+              </li>
+              <li class="price-inner-item">
+                <span class="price-decor">Straight razor</span> shave 300 uah.
+              </li>
             </ul>
           </li>
-          <li class="item">
-            <ul class="services-inner-list list">
-              <li class="price-item">Trainee’s haircut from 50 uah.</li>
-              <li class="price-item">Haircut under the nozzle from 200 uah.</li>
-              <li class="price-item">
-                Children’s haircut (0-12 y.o.) from 300 uah.
+          <li class="price-item item">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-decor">Trainee’s haircut</span> from 50 uah.
               </li>
-              <li class="price-item">Camouflage of gray hair from 300 uah.</li>
+              <li class="price-inner-item">
+                <span class="price-decor">Haircut under the nozzle</span> from
+                200 uah.
+              </li>
+              <li class="price-inner-item">
+                <span class="price-decor">Children’s haircut (0-12 y.o.)</span>
+                from 300 uah.
+              </li>
+              <li class="price-inner-item">
+                <span class="price-decor">Camouflage of gray hair</span> from
+                300 uah.
+              </li>
             </ul>
           </li>
         </ul>
-        <button class="services-btn btn" type="button">Online-booking</button>
+        <button class="price-btn btn" type="button">Online-booking</button>
       </div>
     </section>
     <section class="benefits">
@@ -459,5 +480,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
